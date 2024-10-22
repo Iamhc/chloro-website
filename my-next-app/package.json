@@ -2,11 +2,14 @@
   "name": "my-next-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Iamhc/chloro-website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18",
